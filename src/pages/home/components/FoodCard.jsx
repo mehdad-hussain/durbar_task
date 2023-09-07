@@ -5,7 +5,9 @@ const FoodCard = ({ foodName, price }) => {
     <div className="bg-[#2B2E36] px-4 py-[30px] shadow-md flex justify-around items-center">
       {/* Left Side: Food Name */}
       <div className="flex-grow">
-        <div className="font-semibold text-lg">{foodName}</div>
+        <div className="font-semibold lg:text-lg text-base text-white">
+          {foodName}
+        </div>
       </div>
 
       {/* Right Side: Price Tag and Pill Button */}

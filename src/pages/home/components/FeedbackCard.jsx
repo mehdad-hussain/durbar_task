@@ -14,13 +14,13 @@ const FeedbackCard = ({ imageSrc, name, feedback, time }) => {
 
       {/* Middle Section: Name and Feedback */}
       <div className="flex-grow">
-        <div className="font-semibold text-white">{name}</div>
-        <div className="text-[#B0CAD1]">{feedback}</div>
+        <div className="font-semibold  text-white">{name}</div>
+        <div className="text-[#B0CAD1] xl:text-base lg:text-sm">{feedback}</div>
       </div>
 
       {/* Right Side: Time and Pill Button */}
       <div className="flex flex-col items-end justify-between">
-        <button className="bg-[#000000] text-[#B0CAD1] px-1 py-2.5 rounded-full w-36">
+        <button className="bg-[#000000] text-[#B0CAD1] px-1 text-sm py-2.5 rounded-full xl:w-36 w-28">
           {time}
         </button>
       </div>
