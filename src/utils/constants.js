@@ -147,4 +147,19 @@ const foodData = [
   },
 ];
 
-export { stats, orders, feedbackData, foodData };
+const menuItems = [
+  { id: 1, icon: "📊", label: "Dashboard", link: "/" },
+  { id: 2, icon: "🏠", label: "Main Layout", link: "/layout" },
+  { id: 3, icon: "📝", label: "Order List", link: "/order-list" },
+  { id: 4, icon: "👨‍🍳", label: "Chef Page", link: "/chef-page" },
+  { id: 5, icon: "🌟", label: "Customer Reviews", link: "/reviews" },
+];
+
+const authMenuItems = [
+  { id: 6, icon: "🔐", label: "Login", link: "/login" },
+  { id: 7, icon: "🚪", label: "Logout", link: "/logout" },
+  { id: 8, icon: "🔑", label: "Change Password", link: "/change-password" },
+  { id: 9, icon: "📝", label: "Forgot Password", link: "/forgot-password" },
+];
+
+export { stats, orders, feedbackData, foodData, menuItems, authMenuItems };

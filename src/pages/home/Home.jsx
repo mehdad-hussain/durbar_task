@@ -8,7 +8,7 @@ import { feedbackData, foodData, orders, stats } from "../../utils/constants";
 const Home = () => {
   return (
     <>
-      <div class="grid md:grid-cols-6 gap-y-8 mx-8">
+      <div class="grid md:grid-cols-6 gap-y-8 md:mx-8">
         {/* <!-- First Row --> */}
         <div class="md:col-span-2 col-span-full ">
           <div class="flex items-center flex-col justify-center p-10 rounded-sm bg-[#2B2E36]">

@@ -12,18 +12,20 @@ const TopBar = () => {
       {/* First Div (Logo and Burger Button) */}
 
       <div className="flex">
-        <div className="flex items-center justify-between h-20 lg:w-[324px] md:border-r md:border-r-slate-400">
+        <div className="flex items-center justify-between h-20 lg:w-[324px] border-r border-r-slate-400">
           {/* Logo */}
-          <div className="flex-shrink-0 ml-4">
+          <div className="flex-shrink-0 ml-4 h-10 md:w-40 w-30">
             <img
-              className="h-10 w-10"
-              src="your-logo-image-url.png"
+              className=" object-contain h-full w-full"
+              src="images/Logo.png"
               alt="Logo"
             />
           </div>
 
           {/* Burger Button (Shown on Medium and Below Screens) */}
-          <button className={`ml-4 text-[#B0CAD1] text-2xl mr-4`}>☰</button>
+          <button className={`ml-4 text-[#B0CAD1] text-2xl mr-4 lg:hidden`}>
+            ☰
+          </button>
         </div>
 
         {/* Second Div (Search Input) */}
@@ -37,18 +39,26 @@ const TopBar = () => {
       </div>
 
       {/* Third Div (Notification Bell Icon and Profile Icon) */}
-      <div className="ml-4 flex items-center mr-8                                   ">
+      <div className="ml-4 flex items-center min-w-[160px] max-w-max mr-8 justify-between">
         {/* Notification Bell Icon */}
-        <button className="text-white text-2xl mr-8">🔔</button>
+        <button className="text-white sm:text-2xl text-lg">🔔</button>
 
         {/* Profile Image Button */}
-        <button className="text-white text-2xl">
+        <button className="text-white text-2xl sm:h-10 sm:w-10 h-6 w-6">
           <img
-            className="h-10 w-10 rounded-full"
-            src="your-profile-image-url.png"
+            className="rounded-full object-cover"
+            src="images/customerImage.png"
             alt="Profile"
           />
         </button>
+        <div className="flex items-baseline">
+          <p>
+            <span className="text-white text-sm font-semibold mr-0.5">
+              John Doe
+            </span>
+          </p>
+          <img src="images/downArrow.png" className="w-2 h-2" alt="arrow" />
+        </div>
       </div>
     </div>
   );
