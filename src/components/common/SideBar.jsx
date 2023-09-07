@@ -10,10 +10,10 @@ const Sidebar = () => {
   return (
     <>
       {/* Sidebar */}
-      <nav
-        className={`h-full bg-[#2B2E36] ${
+      <aside
+        className={`bg-[#2B2E36] ${
           isSidebarOpen ? "w-[324px]" : "w-0"
-        } fixed inset-y-0 left-0 overflow-x-hidden transition-all duration-300 ease-in-out lg:static lg:w-[324px]`}
+        } fixed inset-y-0 left-0 overflow-x-hidden transition-all duration-300 ease-in-out top-[92px] lg:w-[324px]`}
       >
         <div className="flex justify-between items-center py-4 pl-6 pr-4">
           <div className="text-2xl font-semibold">Menu</div>
@@ -51,17 +51,17 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-      </nav>
-
-      {/* Overlay for medium screens */}
-      <div
-        onClick={toggleSidebar}
-        className={`lg:hidden fixed inset-0 z-10 bg-black opacity-50 transition-opacity duration-300 ease-in-out ${
-          isSidebarOpen ? "block" : "hidden"
-        }`}
-      ></div>
+      </aside>
     </>
   );
 };
 
 export default Sidebar;
+
+// {/* Overlay for medium screens */}
+// <div
+//   onClick={toggleSidebar}
+//   className={`lg:hidden fixed inset-0 z-10 bg-green opacity-50 transition-opacity duration-300 ease-in-out ${
+//     isSidebarOpen ? "block" : "hidden"
+//   }`}
+// ></div>

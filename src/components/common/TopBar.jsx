@@ -8,7 +8,7 @@ const TopBar = () => {
   };
 
   return (
-    <div className="bg-[#2B2E36] w-full mb-3 h-20 flex items-center justify-between">
+    <div className="bg-[#2B2E36] fixed z-50 w-full mb-3 h-20 flex items-center justify-between">
       {/* First Div (Logo and Burger Button) */}
 
       <div className="flex">

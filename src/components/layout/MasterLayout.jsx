@@ -1,13 +1,17 @@
 import React from "react";
 import TopBar from "../common/TopBar";
 import Sidebar from "../common/SideBar";
+import { Outlet } from "react-router-dom";
 
 const MasterLayout = () => {
   return (
     <>
-      <div className="lg:w-324 min-h-screen bg-[#1D1F23] text-white">
+      <div className="h-[100%] bg-green-500 relative">
         <TopBar />
         <Sidebar />
+        <div className="lg:left-[324px] lg:w-[calc(100vw-324px)] w-full absolute top-[93px]">
+          <Outlet />
+        </div>
       </div>
     </>
   );
