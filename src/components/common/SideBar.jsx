@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import { authMenuItems, menuItems } from "../../utils/constants";
 
 const Sidebar = () => {
@@ -37,9 +37,10 @@ const Sidebar = () => {
                   : ""
               }`}
             >
-              <a
-                href={item.link}
+              <NavLink
+                to={item.link}
                 className="flex items-center text-white text-lg font-semibold space-x-2 hover:text-red-500 transition-colors duration-500"
+                activeClassName="text-red-500"
               >
                 <span className="mx-2">{item.icon}</span>
                 <span
@@ -51,7 +52,7 @@ const Sidebar = () => {
                 >
                   {item.label}
                 </span>
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -69,9 +70,10 @@ const Sidebar = () => {
                   : ""
               }`}
             >
-              <a
-                href={item.link}
+              <NavLink
+                to={item.link}
                 className="flex items-center text-white text-lg font-semibold space-x-2 hover:text-red-500 transition-colors duration-500"
+                activeClassName="text-red-500"
               >
                 <span className="mx-2">{item.icon}</span>
                 <span
@@ -83,7 +85,7 @@ const Sidebar = () => {
                 >
                   {item.label}
                 </span>
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
